@@ -1,0 +1,20 @@
+<div>
+  <ul>
+    <li> <!--// here *ngFor is angular directive -->
+      <h3>{{blog.getTitle()}}</h3>
+      <p>{{blog.getDate()}}</p>
+      <p>{{blog.getOwner()}}</p>
+      <!-- Like Button with FontAwesome heart icon -->
+      <button (click)="likeBlog(blog)" class="like-button">
+        <i class="fas fa-heart"></i> Like
+      </button>
+
+      <!-- Comment Button with FontAwesome comment icon -->
+      <button (click)="commentOnBlog('comment')" class="comment-button">
+        <i class="fas fa-comment"></i> Comment
+      </button>
+    </li>
+  </ul>
+</div>
+
+

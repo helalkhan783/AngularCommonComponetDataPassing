@@ -1,0 +1,30 @@
+p {
+  color: red;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+}
+
+.vertical-container {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.list-component {
+  border: 1px solid #000;
+  padding: 10px;
+  background: #ccc;
+}
+
+.btn {
+  margin-top: 20px;
+  width: 300px;
+}
+
+
+.marginTop{
+  margin-top: 20px;
+}

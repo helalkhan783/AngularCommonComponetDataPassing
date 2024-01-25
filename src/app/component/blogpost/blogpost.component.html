@@ -1,0 +1,38 @@
+<h1>Latest post</h1>
+
+<!--blog post component-->
+
+<div class="vertical-container">
+  <div *ngFor="let post of blogPost" class="list-component marginTop">
+    <app-blog-item [blog]="post"></app-blog-item>
+  </div>
+
+  <h1 class="marginTop">Feature post</h1>
+  <div *ngFor="let post of blogPost" class="list-component marginTop">
+    <app-blog-item (onLikeEvent)="onLikeClick($event)" (onCommentEvent)="onCommentClick($event)"
+                   [blog]="post"></app-blog-item>
+  </div>
+
+</div>
+
+
+<!--
+
+<div class="vertical-container" (click)="divClicked()">
+  &lt;!&ndash;  // two way image set&ndash;&gt;
+  <img id="img" [src]="img">
+  <img src="{{img}}">
+  &lt;!&ndash;// tow way text set&ndash;&gt;
+  <p [textContent]="number"></p>
+  <p>{{number}}</p>
+
+  <button class="btn" (click)="onClick( $event)">Click Me Please !</button>
+
+  &lt;!&ndash;  two way data parsing componet &ndash;&gt;
+  <div>
+    <app-two-way-data-parsing></app-two-way-data-parsing>
+  </div>
+
+</div>
+
+-->
